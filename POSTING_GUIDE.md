@@ -23,11 +23,11 @@ _posts/YYYY-MM-DD-제목-slug.md
 ---
 title: "글 제목"
 date: 2026-07-09 21:00:00 +0900
-categories: [Algorithm]   # Algorithm / AI / Backend / Database 중 하나만
+categories: [Algorithm]   # Algorithm / AI / Backend / Database / Memories 중 하나만
 ---
 ```
 
-- `categories`는 **넷 중 하나만** 지정. 카테고리를 늘리거나 2단계 서브카테고리를
+- `categories`는 **다섯 중 하나만** 지정. (`Memories`는 월간 회고 전용 — §5 참고) 카테고리를 늘리거나 2단계 서브카테고리를
   쓰지 않는다(초기 방침 유지).
 - `tags`는 쓰지 않는다. 이 사이트는 태그/아카이브 기능을 껐다.
 - 특정 글에 소셜 공유용 대표 이미지를 따로 쓰고 싶으면 `image:` 필드 추가 가능
@@ -62,7 +62,37 @@ bundle exec jekyll serve
   bundle exec jekyll serve --future
   ```
 
-## 5. 배포
+## 5. 월간 회고 (Memories)
+
+회고 글은 `Memories` 카테고리로 발행한다. 사이드바의 **MEMORIES** 탭(`/memories/`)과
+`/categories/memories/`에 모아서 보여준다.
+
+- 파일명: `_posts/YYYY-MM-DD-memories-YYYY-MM.md` (뒤의 `YYYY-MM`은 회고 대상 월)
+  - 예: 9월 회고를 10월 3일에 발행 → `_posts/2026-10-03-memories-2026-09.md`
+    → URL `/posts/memories-2026-09/`
+- 제목: `"2026년 9월 회고"` 형식
+
+템플릿 (복사해서 사용):
+
+```markdown
+---
+title: "YYYY년 M월 회고"
+date: YYYY-MM-DD 21:00:00 +0900
+categories: [Memories]
+---
+
+## 이번 달 한 일
+
+## 이번 달 쓴 글
+
+## 잘한 점 (Keep)
+
+## 아쉬운 점 (Problem)
+
+## 다음 달 해볼 것 (Try)
+```
+
+## 6. 배포
 
 별도 빌드 명령 없이 `main`에 push하면 GitHub Actions가 자동으로 빌드·배포한다.
 
@@ -74,9 +104,9 @@ git push origin main
 
 push 후 GitHub Actions 탭에서 "Build and Deploy" 워크플로가 성공했는지 확인하면 끝.
 
-## 6. 체크리스트 (발행 전)
+## 7. 체크리스트 (발행 전)
 
-- [ ] `categories`가 Algorithm/AI/Backend/Database 중 하나인가
+- [ ] `categories`가 Algorithm/AI/Backend/Database/Memories 중 하나인가
 - [ ] 날짜/시간이 맞는가 (`+0900`)
 - [ ] 코드 블록에 언어 지정했는가
 - [ ] 본문에 h1을 쓰지 않았는가

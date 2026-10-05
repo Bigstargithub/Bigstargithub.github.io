@@ -49,6 +49,7 @@
 ## 3. 사이트 구조
 
 - **카테고리 (3개, 늘리지 말 것):**
+  > 이후 `Database`, `Memories`(월간 회고) 카테고리가 추가됨. 현재 기준은 `POSTING_GUIDE.md` 참고.
   - `Algorithm` — 코딩테스트/알고리즘 풀이와 배운 점
   - `AI` — LLM·Agent·추론 인프라(vLLM 등)
   - `Backend` — DB·네트워크·OS·시스템설계·백엔드 전반
