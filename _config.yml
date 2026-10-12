@@ -16,10 +16,10 @@ timezone: Asia/Seoul
 
 title: 개발자 장한별입니다. # the main title
 
-tagline: 코딩테스트 · CS · AI 학습 기록 # it will display as the subtitle
+tagline: 제조 현장 AI 에이전트를 만들고, 평가로 검증하는 엔지니어 # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
-  코딩테스트 풀이와 CS 학습 내용을 기록하고, LLM/AI Agent 관련 기술 글을 쌓아가는 개발 블로그.
+  제조 현장에서 AI 에이전트를 만들고 평가하는 7년차 엔지니어 장한별의 기술 블로그. AI 에이전트 설계·평가, LLM 서빙 인프라, 데이터베이스에 대한 실전 기록을 남깁니다.
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
