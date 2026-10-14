@@ -41,6 +41,6 @@ order: 4
 
 - Email: bigstarjang1993@gmail.com
 - GitHub: https://github.com/Bigstargithub
-- LinkedIn: {LINKEDIN_URL}
+- LinkedIn: https://www.linkedin.com/in/hanbyeol-jang-186a541a5/
 
 AI 에이전트 관련 강의, 커피챗, 협업 제안은 언제든 환영합니다.
